@@ -127,7 +127,6 @@ class Mattel:
         return None
 
     def update_leds(self):
-        print(self.leds)
         self.write([0, 0, self.leds[0] +
                     (self.leds[1] << 1) +
                     (self.leds[2] << 2) +
